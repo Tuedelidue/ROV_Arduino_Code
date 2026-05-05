@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Arduino",
+      "type": "shell",
+      "command": "arduino-cli compile --fqbn arduino:avr:mega:cpu=atmega2560 Tests/Blink_Test/Blink_Test.ino",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Upload Arduino",
+      "type": "shell",
+      "command": "arduino-cli upload -p COM9 --fqbn arduino:avr:mega:cpu=atmega2560 Tests/Blink_Test/Blink_Test.ino",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
