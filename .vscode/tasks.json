@@ -28,6 +28,20 @@
       "command": "arduino-cli upload -p COM9 --fqbn arduino:avr:mega:cpu=atmega2560 Tests/ESC_Test/ESC_Test.ino",
       "group": "build",
       "problemMatcher": []
+    },
+    {
+      "label": "Compile BNO055 Test",
+      "type": "shell",
+      "command": "arduino-cli compile --fqbn arduino:avr:mega:cpu=atmega2560 Tests/BNO055_Test/BNO055_Test.ino",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Upload BNO055 Test",
+      "type": "shell",
+      "command": "arduino-cli upload -p COM9 --fqbn arduino:avr:mega:cpu=atmega2560 Tests/BNO055_Test/BNO055_Test.ino",
+      "group": "build",
+      "problemMatcher": []
     }
   ]
 }
